@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="Style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<!-- jQuery (required by Slick) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick JS -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <title>Jewelry Store</title>
+</head>
+
+<body>
+
+
+  <!-- Header Section -->
+  <div class="headerbox">
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="assets/logo-70.png" alt="Logo" />
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li class="tx"><a class="tx" style="cursor: pointer;">Shop by Collections <img class="arrow" src="assets/SVG.png" alt="Arrow" /></a>
+            </li>
+            <li class="tx" style="cursor: pointer;"><a class="tx" style="cursor: pointer;">Shop by Category <img class="arrow" src="assets/SVG.png" alt="Arrow" /></a>
+            </li>
+            <li><a style="cursor: pointer;">Bestsellers</a></li>
+            <li><a style="cursor: pointer;" >Men's Jewellery</a></li>
+            <li><a style="cursor: pointer;" >Store Locations</a></li>
+          </ul>
+        </nav>
+        <div class="cart-icons">
+          <img src="assets/search.png" alt="Search" style="cursor: pointer;" />
+          <img src="assets/Vector (1).png" alt="Wishlist" style="cursor: pointer;"/>
+          <img src="assets/c.png" alt="Cart"style="cursor: pointer;" />
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Slideshow Section -->
+<div class="slideshow-container">
+    <!-- Previous Button -->
+    <a class="prev" onclick="plusSlides(-1)">
+      <img src="assets/arrow_back_ios_new (1).png" alt="Previous" />
+    </a>
+  
+    <!-- Slide 1 -->
+ 
+    <div class="slide" style="background-image: url('assets/div.elementor-element.png');">
+      
+      <div class="slide-text">
+        
+        <h2 class="heading-large">Jewellery</h2>
+        <h1 class="heading-xlarge">Rings</h1>
+        <h3 class="heading-medium">COLLECTION</h3>
+        <a class="shop-button" style="cursor: pointer;">Shop Now</a>
+      </div>
+    </div>
+
+  
+  
+    <!-- Slide 2 -->
+    <div class="slide" style="background-image: url('assets/Rectangle 13.png');">
+      <div class="slide-text">
+        <h2 class="heading-large">Jewellery</h2>
+        <h1 class="heading-xlarge">EARRING</h1>
+        <h3 class="heading-medium">COLLECTION</h3>
+        <a class="shop-button">Shop Now</a>
+      </div>
+    </div>
+  
+  
+  
+  
+    <!-- Slide 3 -->
+    
+    <div class="slide" style="background-image: url('assets/img3.png');">
+      <div class="slide-text">
+        <h2 class="heading-large">Jewellery</h2>
+        <h1 class="heading-xlarge">Necklace</h1>
+        <h3 class="heading-medium">COLLECTION</h3>
+        <a class="shop-button">Shop Now</a>
+      </div>
+    </div>
+  
+ 
+    <!-- Next Button -->
+    <a class="next" onclick="plusSlides(1)">
+      <img src="assets/arrow_back_ios_new.png" alt="Next" />
+    </a>
+  </div>
+  
+  <!-- Features Section -->
+  <div class="features-section">
+    <div class="headerbox">
+      <div class="features">
+
+        <div class="feature-item">
+          <img src="assets/truck.png" alt="Free Shipping" />
+          <p>Free Shipping</p>
+        </div>
+        <div class="feature-item">
+          <img src="assets/SVG (1).png" alt="Sterling Silver" />
+          <p>92.5 Sterling Silver</p>
+        </div>
+        <div class="feature-item">
+          <img src="assets/SVG (2).png" alt="Handcrafted" />
+          <p>Handcrafted</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--neckless section-->
+  <div class="headerbox">
+    <div class="category-section">
+      <h2 class="category-title">Necklaces</h2>
+
+
+      <div class="product-box ">
+
+       
+  
+        <!-- Slick Slider -->
+        <div class="product-grid">
+          <!-- Product Card 1 -->
+          <div class="product-card">
+            <img src="assets/image 21.png" alt="Hobo Small" />
+            <p class="product-name">Hobo Small</p>
+            <p class="product-price">RS. 3499.00</p>
+            <div class="dot">
+              <span class="dot1"><span class="dot1-1"></span></span>
+              <span class="dot2"></span>
+            </div>
+          </div>
+  
+          <!-- Product Card 2 -->
+          <div class="product-card">
+            <img src="assets/image 21.png" alt="Hobo Small" />
+            <p class="product-name">Hobo Small</p>
+            <p class="product-price">RS. 3499.00</p>
+            <div class="dot">
+              <span class="dot1"><span class="dot1-1"></span></span>
+              <span class="dot2"></span>
+            </div>
+          </div>
+  
+          <!-- Product Card 3 -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="assets/image 44.png" alt="Storml" />
+              <p class="sale">Sale</p>
+            </div>
+            <p class="product-name">Storml</p>
+            <p class="product-price">
+              <span style="color: rgba(255, 81, 81, 1); text-decoration: line-through;">RS.3,999.00</span>
+              <span style="padding-left: 10px;">RS. 3499.00</span>
+            </p>
+          </div>
+  
+          <!-- Product Card 4 -->
+          <div class="product-card">
+            <img src="assets/neck.png" alt="Bo Soft Strap" />
+            <p class="product-name">Bo Soft Strap</p>
+            <p class="product-price">RS. 3999.00</p>
+            <div class="dot">
+              <span class="dot1"><span class="dot1-1"></span></span>
+              <span class="dot2"></span>
+            </div>
+          </div>
+  
+          <!-- Product Card 5 -->
+          <div class="product-card">
+            <img src="assets/neck4.png" alt="Hobo Large" />
+            <p class="product-name">Hobo Large</p>
+            <p class="product-price">RS. 3499.00</p>
+          </div>
+        </div>
+  
+        <!-- Next Button -->
+        
+      <!-- Dots navigation -->
+      <div class="dots">
+        <span class="dot3"></span>
+        <span class="dot4"></span>
+        <span class="dot4"></span>
+        <span class="dot4"></span>
+      </div>
+    </div>
+
+   
+  </div>
+  
+</div>
+
+  <!--Product section-->
+  <div class="thirdpage">
+    <div class="headerbox">
+      <div class="Product-img">
+        <div class="product-chain-bracelets">
+          <img src="assets/image 46 (1).png" alt="Chain Bracelets">
+          <span class="product-category">Chain Bracelets</span>
+          <span class="product-count">6 Products</span>
+        </div>
+        <div class="product-earrings">
+          <img src="assets/image 46.png" alt="Earrings">
+          <span class="product-category">Earrings</span>
+          <span class="product-count">9 Products</span>
+        </div>
+        <div class="product-necklaces">
+          <img src="assets/image 45.png" alt="Necklaces">
+          <span class="product-category">Necklaces</span>
+          <span class="product-count">7 Products</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Earnig Section-->
+  <div class="headerbox">
+    <div class="category-section">
+      <h2 class="category-title">Earrings</h2>
+
+      <div class="product-box">
+
+        
+        <div class="product-grid">
+          
+           <div class="product-card ">
+            <img src="assets/ear-1.png" alt="Hobo Small" />
+            <p class="product-name">Hobo Small</p>
+            <p class="product-price">RS. 3499.00</p>
+
+          </div>
+          <div class="product-card ">
+            <img src="assets/ear-1.png" alt="Hobo Small" />
+            <p class="product-name">Hobo Small</p>
+            <p class="product-price">RS. 3499.00</p>
+
+          </div>
+          <div class="product-card ">
+            <div class="image-container">
+              <img src="assets/ear-2.png" alt="Storml" />
+              <p class="sale">Sale</p>
+            </div>
+            <p class="product-name">Storml</p>
+            <p class="product-price"> <span
+                style="color: rgba(255, 81, 81, 1); text-decoration: line-through;">RS.3,999.00 </span> <span
+                style="padding-left: 10px;">RS. 3499.00</span></p>
+          </div>
+          <div class="product-card">
+            <img src="assets/ear-3.png" alt="Bo Soft Strap" />
+            <p class="product-name">Bo Soft Strap</p>
+            <p class="product-price">RS. 3999.00</p>
+
+          </div>
+          <div class="product-card">
+            <img src="assets/ear-4.png" alt="Hobo Large" />
+            <p class="product-name">Hobo Large</p>
+            <p class="product-price">RS. 3499.00</p>
+          </div>
+
+
+        </div>
+ 
+
+      </div>
+      <div class="ear-dots">
+        <span class="dot3"></span>
+        <span class="dot4"></span>
+        <span class="dot4"></span>
+        <span class="dot4"></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!--img-->
+  <div class="fifth-page">
+       <div class="text-section">
+      <div class="main-text">THE NEW</div>
+      <div class="sub-text">The unique make that fits your style</div>
+      <div class="description-text">Always look for in a world-class diamond!</div>
+      <div><a class="Explore-button" style="cursor: pointer;">Explore Now</a></div>
+    </div>
+
+
+  <div class="img5">
+    <img src="assets/5img.png" alt="Fifth Page Image">
+  </div>
+   
+  </div>
+
+
+  <!--select category-->
+  <div class="headerbox">
+    <div class="category-section">
+      <div class="neckbox">
+        <div class="maintxt">
+          The Perfect Pairing
+        </div>
+        <div class="secondtxt"> Pair up our statement pieces to create a unique look</div>
+      </div>
+
+      <div class="images">
+        <div class="img1">
+          <img src="assets/6-1.png">
+          <div class="necktxt" style="cursor: pointer;"><span>Necklaces<img src="assets/Vector.png" class="Vector"></span></div>
+        </div>
+
+        <div class="img2">
+          <div class="img2-1">
+            <img src="assets/6-2.png">
+            <div class="ringtxt" style="cursor: pointer;"> <span>Rings<img src="assets/Vector.png" class="Vector"></span></div>
+          </div>
+          <div class="img2-2">
+            <img src="assets/6-3.png">
+            <div class="bracelet" style="cursor: pointer;"><span>Bracelets<img src="assets/Vector.png" class="Vector"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--img-->
+  <div>
+    <img src="assets/7-1.png" class="p7">
+  </div>
+
+  <!---->
+  <div class="headerbox">
+    <div class="buypage">
+      <div class="heading">Product Of the Month</div>
+      <div class="maincontainer">
+        <div>
+          <img class="imgbox" src="assets/image 12.png">
+        </div>
+        <div class="textbox">
+          <p class="text7-1">Rose ForHER Sterling Silver Pendant Chain</p>
+          <p class="text7-2">RS. 8,999.00</p>
+          <p class="text7-3"> Whimsical jewellery that will look extra adorable when you wear it. This design is so cute
+            and easy to wear, you will never want to take it off. Light weightand super easy to carry that will amp up
+            the
+            style quotient outfit. And a perfect gift for your loved one</p>
+
+            <div class="quantity-box">
+              <p class="text7-4">Quantity</p>
+              <div class="plusbox">
+                <p class="decrease" style="cursor: pointer;">-</p>
+                <p class="quantity">1</p>
+                <p class="increase" style="cursor: pointer;">+</p>
+              </div>
+              <div class="btn">
+                <a class="add" style="cursor: pointer;">Add to cart</a>
+                <a class="buy" style="cursor: pointer;">Buy it now</a>
+              </div>
+            </div>
+            
+        </div>
+
+      </div>
+      <div class="dots7">
+        <span class="dot3"></span>
+        <span class="dot4"></span>
+        <span class="dot4"></span>
+        <span class="dot4"></span>
+      </div>
+    </div>
+  </div>
+
+  <!---->
+  <div class="headerbox">
+    <div class="category-section">
+
+
+      <div class="product-box">
+
+
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="assets/img1.png" alt="Hobo Small" />
+            <p class="product-name">Hobo Small</p>
+            <p class="product-price">RS. 3499.00</p>
+
+          </div>
+          <div class="product-card">
+            <img src="assets/img1.png" alt="Hobo Small" />
+            <p class="product-name">Hobo Small</p>
+            <p class="product-price">RS. 3499.00</p>
+
+          </div>
+          <div class="product-card">
+            <div class="image-container">
+              <img src="assets/img2.png" alt="Storml" />
+              <p class="sale">Sale</p>
+            </div>
+            <p class="product-name">Storml</p>
+            <p class="product-price"> <span
+                style="color: rgba(255, 81, 81, 1); text-decoration: line-through;">RS.3,999.00 </span> <span
+                style="padding-left: 10px;">RS. 3499.00</span></p>
+
+          </div>
+          <div class="product-card">
+            <img src="assets/3-img.png" alt="Bo Soft Strap" />
+            <p class="product-name">Bo Soft Strap</p>
+            <p class="product-price">RS. 3999.00</p>
+
+          </div>
+          <div class="product-card">
+            <img src="assets/img4.png" alt="Hobo Large" />
+            <p class="product-name">Hobo Large</p>
+            <p class="product-price">RS. 3499.00</p>
+          </div>
+
+
+        </div>
+        
+
+      </div>
+      <div class="  dots custom-dots">
+        <span class="dot3"></span>
+        <span class="dot4"></span>
+        <span class="dot4"></span>
+        <span class="dot4"></span>
+      </div>
+    </div>
+  </div>
+
+  <!---->
+
+  <div class="feedback">
+    <div class="headerbox">
+      <div class="feedheading">Testimonials</div>
+
+      <div class="review">
+
+        <a class="prev2" style="cursor: pointer;"> <img src="assets/left arrow.png"></a>
+        <div class="rating">
+          <img src="assets/grade.png">
+          <img src="assets/grade.png">
+          <img src="assets/grade.png">
+          <img src="assets/grade.png">
+          <img src="assets/grade (1).png">
+        </div>
+        <p class="feedtxt">Making customer believe what they are investing on is the biggest concern nowadays , and we
+          purchase pretty often from Forher store,
+          cause they make sure that their customers gets the best of it , I recommend everyone out there to check their
+          collection once , we did like
+          that and I am pretty much sure you guys would like that too , ForHer awaiting for much such collections</p>
+        <p class="review-name"> Jitesh Gulgulia</p>
+        <a class="next2" style="cursor: pointer;"><img src="assets/right arrow.png"></a>
+      </div>
+
+    </div>
+  </div>
+  
+  <!---->
+  <div class="lastpage">
+    <div class="contactpage">
+      <div class="aboutus">
+        <p class="t1">ABOUT US</p>
+        <p class="t2">Silversea is one-stop solution for all your dainty silver jewellery needs.Our mission is to
+          provide trendy and
+          everyday wear minimal silverjewellery from all over the globe to our customers at pocket friendlyprices.
+          Forher
+          carefully curates its designs from all over the world togive its customers a feeling of newness. The brand was
+          established in 2017 and is caving its path to success since then.</p>
+        <div class="icon">
+          <img src="assets/facebook.png">
+          <img src="assets/insta.png">
+        </div>
+      </div>
+
+
+      <div class="block2">
+        <div class="quick-links" >
+          <ul>
+            <li class="headtxt" style="text-transform: uppercase; cursor: pointer;">Quick links</li>
+            <li style="cursor: pointer;">Contact us</li>
+            <li style="cursor: pointer;">Shipping & Delivery</li>
+            <li style="cursor: pointer;">Return Policy</li>
+            <li style="cursor: pointer;">About Us</li>
+            <li style="cursor: pointer;">Privacy Policy</li>
+            <li style="cursor: pointer;">Terms & Conditions</li>
+          </ul>
+        </div>
+        <div class="collection">
+          <ul>
+            <li class="collectionhead" style="text-transform: uppercase; cursor: pointer;">Collections</li>
+            <li style="cursor: pointer;">All</li>
+            <li style="cursor: pointer;">Rings</li>
+            <li style="cursor: pointer;">Chains</li>
+            <li style="cursor: pointer;">Bracelets</li>
+            <li style="cursor: pointer;">Necklaces</li>
+            <li style="cursor: pointer;">Earrings</li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <p class="txt1" >Newsletter</p>
+          <p class="txt2">Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <input placeholder="Enter your email address" class="input">
+          <button class="subscribe" style="cursor: pointer;">Subscribe</button>
+        </div>
+      </div>
+
+    </div>
+    <div>
+
+      <div class="lasttxt">Copyright © 2024 Silversea</div>
+
+
+    </div>
+    </div>
+
+
+
+</body>
+
+<!-- JavaScript for Slideshow -->
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  function showSlides(n) {
+    const slides = document.getElementsByClassName("slide");
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+  }
+
+
+  $(document).ready(function(){
+      // Initialize Slick slider
+      $('.product-grid').slick({
+  slidesToShow: 4,  // Number of products shown at once
+  slidesToScroll: 1,  // Number of products scrolled per click
+  arrows: true, 
+  dots:false, // Enable default arrows
+  infinite: true,  // Enable infinite scrolling
+  autoplay:false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+  });
+
+  $('.product-grid').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: true,
+  infinite: true,
+  prevArrow: '<button class="slick-prev" ><img src="assets/left arrow.png" class="left" alt="Previous"></button>',
+  nextArrow: '<button class="slick-next"><img src="assets/right arrow.png" alt="Next"></button>',
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const decreaseBtn = document.querySelector(".decrease");
+  const increaseBtn = document.querySelector(".increase");
+  const quantityDisplay = document.querySelector(".quantity");
+
+  // Convert displayed quantity to a number
+  let quantity = parseInt(quantityDisplay.textContent);
+
+  // Handle click on the "+" button
+  increaseBtn.addEventListener("click", () => {
+    quantity++;
+    quantityDisplay.textContent = quantity;
+  });
+
+  // Handle click on the "-" button
+  decreaseBtn.addEventListener("click", () => {
+    if (quantity > 1) { // Ensure quantity doesn't go below 1
+      quantity--;
+      quantityDisplay.textContent = quantity;
+    }
+  });
+});
+
+
+$('.product-grid').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    // Remove 'active' class from all dots
+    $('.dot').removeClass('active');
+    // Add 'active' class to the clicked dot
+    $('.dot').eq(nextSlide).addClass('active');
+  });
+
+  // Sync custom dots with slider movement
+  $('.dot').click(function(){
+    var index = $(this).index();  // Get the index of the clicked dot
+    $('.product-grid').slick('slickGoTo', index);  // Move to the slide corresponding to the clicked dot
+  });
+  
+  // Optionally, set the first dot to be active initially
+  $('.dot').first().addClass('active');
+
+
+
+
+
+  
+
+
+</script>
+
+</html>
