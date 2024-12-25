@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 <!-- jQuery (required by Slick) -->
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <!-- Slick JS -->
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -134,7 +134,7 @@
        
   
         <!-- Slick Slider -->
-        <div class="product-grid">
+        <div class="product-grid page-neck">
           <!-- Product Card 1 -->
           <div class="product-card">
             <img src="assets/image 21.png" alt="Hobo Small" />
@@ -192,12 +192,12 @@
         <!-- Next Button -->
         
       <!-- Dots navigation -->
-      <div class="dots">
+      <!-- <div class="dots">
         <span class="dot3"></span>
         <span class="dot4"></span>
         <span class="dot4"></span>
         <span class="dot4"></span>
-      </div>
+      </div> -->
     </div>
 
    
@@ -277,12 +277,7 @@
  
 
       </div>
-      <div class="ear-dots">
-        <span class="dot3"></span>
-        <span class="dot4"></span>
-        <span class="dot4"></span>
-        <span class="dot4"></span>
-      </div>
+     
     </div>
   </div>
 
@@ -343,6 +338,7 @@
   <div class="headerbox">
     <div class="buypage">
       <div class="heading">Product Of the Month</div>
+      <div class="slider">
       <div class="maincontainer">
         <div>
           <img class="imgbox" src="assets/image 12.png">
@@ -358,9 +354,9 @@
             <div class="quantity-box">
               <p class="text7-4">Quantity</p>
               <div class="plusbox">
-                <p class="decrease" style="cursor: pointer;">-</p>
+                <p class="decrease" style="cursor: pointer;"><img src="assets/minus.png"></p>
                 <p class="quantity">1</p>
-                <p class="increase" style="cursor: pointer;">+</p>
+                <p class="increase" style="cursor: pointer;"><img src="assets/plus.png"></p>
               </div>
               <div class="btn">
                 <a class="add" style="cursor: pointer;">Add to cart</a>
@@ -371,13 +367,37 @@
         </div>
 
       </div>
-      <div class="dots7">
-        <span class="dot3"></span>
-        <span class="dot4"></span>
-        <span class="dot4"></span>
-        <span class="dot4"></span>
+      <div class="maincontainer">
+        <div>
+          <img class="imgbox" src="assets/ring-6604573_1280.jpg">
+        </div>
+        <div class="textbox">
+          <p class="text7-1">Rose ForHER Sterling Silver Pendant Chain</p>
+          <p class="text7-2">RS. 8,999.00</p>
+          <p class="text7-3"> Whimsical jewellery that will look extra adorable when you wear it. This design is so cute
+            and easy to wear, you will never want to take it off. Light weightand super easy to carry that will amp up
+            the
+            style quotient outfit. And a perfect gift for your loved one</p>
+
+            <div class="quantity-box">
+              <p class="text7-4">Quantity</p>
+              <div class="plusbox">
+                <p class="decrease" style="cursor: pointer;"><img src="assets/minus.png"></p>
+                <p class="quantity">1</p>
+                <p class="increase" style="cursor: pointer;"><img src="assets/plus.png"></p>
+              </div>
+              <div class="btn">
+                <a class="add" style="cursor: pointer;">Add to cart</a>
+                <a class="buy" style="cursor: pointer;">Buy it now</a>
+              </div>
+            </div>
+            
+        </div>
+
       </div>
+   
     </div>
+  </div>
   </div>
 
   <!---->
@@ -429,12 +449,7 @@
         
 
       </div>
-      <div class="  dots custom-dots">
-        <span class="dot3"></span>
-        <span class="dot4"></span>
-        <span class="dot4"></span>
-        <span class="dot4"></span>
-      </div>
+    
     </div>
   </div>
 
@@ -555,12 +570,18 @@
   $(document).ready(function(){
       // Initialize Slick slider
       $('.product-grid').slick({
+      dots:true,
   slidesToShow: 4,  // Number of products shown at once
   slidesToScroll: 1,  // Number of products scrolled per click
-  arrows: true, 
-  dots:false, // Enable default arrows
+  arrows: true,  // Enable default arrows
   infinite: true,  // Enable infinite scrolling
   autoplay:false,
+  customPaging: function (slider, i) {
+        // Custom HTML for dots
+        return i === 0
+          ? '<span class="dot3"></span>' // Active state for the first dot
+          : '<span class="dot4"></span>'; // Default for other dots
+      },
   responsive: [
     {
       breakpoint: 1024,
@@ -580,14 +601,29 @@
 });
   });
 
+  $('.slider').slick({
+      dots: true, // Enable dots
+      arrows: false, // Disable navigation arrows
+      autoplay: false, // Enable autoplay
+      autoplaySpeed: 3000, // 3 seconds per slide
+      infinite: true, // Loop the slides
+      speed: 600, // Transition speed
+      fade: true, // Fade effect
+      cssEase: 'linear', // Smooth fade transition
+    });
+
+  
   $('.product-grid').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
+   dots: true,
   arrows: true,
   infinite: true,
   prevArrow: '<button class="slick-prev" ><img src="assets/left arrow.png" class="left" alt="Previous"></button>',
   nextArrow: '<button class="slick-next"><img src="assets/right arrow.png" alt="Next"></button>',
 });
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const decreaseBtn = document.querySelector(".decrease");
@@ -613,21 +649,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-$('.product-grid').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    // Remove 'active' class from all dots
-    $('.dot').removeClass('active');
-    // Add 'active' class to the clicked dot
-    $('.dot').eq(nextSlide).addClass('active');
-  });
 
-  // Sync custom dots with slider movement
-  $('.dot').click(function(){
-    var index = $(this).index();  // Get the index of the clicked dot
-    $('.product-grid').slick('slickGoTo', index);  // Move to the slide corresponding to the clicked dot
-  });
-  
-  // Optionally, set the first dot to be active initially
-  $('.dot').first().addClass('active');
+
+
 
 
 
